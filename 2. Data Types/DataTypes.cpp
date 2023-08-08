@@ -21,6 +21,7 @@ main()
 */
 #include <iostream>
 #include <cmath>
+#include <string>
 using namespace std;
 
 // Function that perdorms various math operations
@@ -88,11 +89,57 @@ int logicalOps()
 
 // 2.4 Character Data
 
+/*
+In Python strings can be created with single or double quotes. 
+In C++ single quotes are used for the character (char) data type, 
+and double quotes are used for the string data type.
+*/
+
+/* PYTHON
+# Shows direct comparison of both Strings & Characters in Python
+def main():
+
+    strvar = "b"
+    charvar = 'b'
+
+    print('b' == charvar)
+    print("b" == strvar)
+    print('a' == "a")
+
+main()
+
+results:
+True
+True
+True
+
+*/
+
+//Domonstrates for chars and strings
+//can not be directly compared.
+
+int charData()
+{
+    string strvar = "b";
+    char charvar = 'b';
+
+    cout << ('b' == charvar) << endl;
+    cout << ("b" == strvar) << endl;
+
+    //cout << ('a' == "b") << endl;
+    //Produces error: C++ forbids comparison between pointer and integer
+
+    return 0;
+
+}
+
 
 int main()
 {
     operations();
     cout << "" << endl;
     logicalOps();
+    cout << "" << endl;
+    charData();
     return 0;
 }
