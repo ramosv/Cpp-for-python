@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <random>
+#include <sstream>
+
 using namespace std;
 
 // Write a function that generate a string that 29 characters long
@@ -34,8 +36,33 @@ string generateSentence()
 int main()
 {
     string sentence = "methinks it is like a weasel";
+    stringstream ss(sentence);
+
+    
+
+    /*
+    The most commonly used stringstream operators are as follows:
+
+    Operator<<: pushes a string object into the stream.
+    Operator>>: extracts a word from the stream.
+
+    */
+
+    string words[6];
+    string word;
+    int counter = 0;
+
+    while(ss >> word) // Extract word from the stream
+    {
+        words[counter] = word;
+        //cout << "Word in array: " << words[counter] << endl;
+        counter++;
+    }  
+
+
+
     int nope = 0;
-    for (int i = 0; i < 1000000; i++)
+    for (int i = 0; i < 100; i++)
     {
         string word = generateSentence();
 
