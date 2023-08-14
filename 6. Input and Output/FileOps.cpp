@@ -39,6 +39,7 @@ perform the same direction of data for files, with the exact same syntax.
 
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
 
 using namespace std;
 
