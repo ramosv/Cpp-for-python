@@ -1,0 +1,11 @@
+
+7.2. Summary
+
+    There are two types of errors that occur while writing programs: syntax errors and logic errors
+
+    A syntax error is an error that occurs due to typing error or wrong statement that is not allowed in a language. This can be easily caught as the program does not run until this is fixed.
+
+    Logic errors are errors happen not due to error in how the code is written, but because the code is producing an unintended or unexpected value such as a division by 0 leading to an undefined value.
+
+    logic errors can be caught by using try and catch which can help pinpoint what is causing the error and avoid confusion about the problem.
+

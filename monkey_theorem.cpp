@@ -62,9 +62,16 @@ int main()
 
 
     int nope = 0;
+
     for (int i = 0; i < 100; i++)
     {
         string word = generateSentence();
+
+        for(int j =0 j <= 5; j++)
+        {
+            word.find(words[j]);
+            
+        }
 
         if(word.compare(sentence) == 0)
         {
